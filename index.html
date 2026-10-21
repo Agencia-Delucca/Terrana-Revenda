@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="script.js"></script>
+
+    <title>Teste</title>
+</head>
+<style>
+</style>
+<body>
+    <main>
+        <section id="header">
+            <a href="https://atacadoterrana.com.br/" target="_blank">
+                <img src="imgs/logo-terrana.svg" alt="Logo Terrana" />
+            </a>
+        </section>
+
+        <section id="bloco-01">
+            <div class="wrapper">
+                <div class="columns">
+                    <div class="left">
+                        <div class="title">
+                            <span>Revenda Atacado Terrana</span>
+                        </div>
+                        <div class="content">
+                            <span>Aumente a rentabilidade do seu negócio com produtos naturais de alta qualidade.</span>
+                            <span>Mais de 1.800 produtos naturais para padarias, restaurantes, hotéis, buffets, mercados, com entrega ágil e condições pensadas para o seu crescimento.</span>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="imgs/icon-fabrica.svg" alt="Icon Fábrica" />
+                                <span><b>Fábrica própria de temperos</b></span>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/icon-cd.svg" alt="Icon Centro de Distribuição" />
+                                <span><b>Centro de distribuição de 1.300&nbsp;m²</b></span>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/icon-lojas.svg" alt="Icon Loja Física" />
+                                <span><b>Loja física e presença na CEASA Campinas</b></span>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/icon-brasil.svg" alt="Icon Brasil" />
+                                <span><b>Mais de 1.000 empresas atendidas em todo o Brasil</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="formulario">
+                        <div class="container">
+                            <h2>Preencha nosso formulário e entraremos em contato:</h2>
+
+                            <form id="form">
+                            <div class="grid">
+
+                                <div class="field full">
+                                <label for="nome">Nome completo*</label>
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    name="nome"
+                                    placeholder="Digite seu nome completo"
+                                    autocomplete="name"
+                                    minlength="3"
+                                    maxlength="120"
+                                    required
+                                >
+                                </div>
+
+                                <div class="field">
+                                <label for="whatsapp">WhatsApp*</label>
+                                <input
+                                    type="tel"
+                                    id="whatsapp"
+                                    name="whatsapp"
+                                    placeholder="(xx) xxxx-xxxx"
+                                    autocomplete="tel"
+                                    maxlength="15"
+                                    inputmode="numeric"
+                                    required
+                                >
+                                </div>
+
+                                <div class="field">
+                                <label for="email">E-mail*</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="seuemail@email.com.br"
+                                    autocomplete="email"
+                                    maxlength="254"
+                                    required
+                                >
+                                </div>
+
+                                <div class="field">
+                                <label for="cidade">Cidade*</label>
+                                <input
+                                    type="text"
+                                    id="cidade"
+                                    name="cidade"
+                                    placeholder="Digite a cidade"
+                                    autocomplete="address-level2"
+                                    maxlength="100"
+                                    required
+                                >
+                                </div>
+
+                                <div class="field">
+                                <label for="estado">Estado*</label>
+                                <select
+                                    id="estado"
+                                    name="estado"
+                                    autocomplete="address-level1"
+                                    required
+                                >
+                                    <option value="" disabled selected>Selecione o estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                </div>
+
+                                <div class="field">
+                                <label for="empresa">Empresa / Estabelecimento*</label>
+                                <input
+                                    type="text"
+                                    id="empresa"
+                                    name="empresa"
+                                    placeholder="Digite o nome da empresa"
+                                    autocomplete="organization"
+                                    maxlength="150"
+                                    required
+                                >
+                                </div>
+
+                                <div class="field">
+                                <label for="segmento">Segmento*</label>
+                                <select id="segmento" name="segmento" required>
+                                    <option value="" disabled selected>Selecione o segmento</option>
+                                    <option value="Mercado ou varejo alimentar">Mercado ou varejo alimentar</option>
+                                    <option value="Distribuidor ou revenda">Distribuidor ou revenda</option>
+                                    <option value="Restaurante">Restaurante</option>
+                                    <option value="Padaria ou confeitaria">Padaria ou confeitaria</option>
+                                    <option value="Industria de alimentos">Indústria de alimentos</option>
+                                    <option value="Cafeteria ou food service">Cafeteria ou food service</option>
+                                    <option value="Hotel ou pousada">Hotel ou pousada</option>
+                                    <option value="Consumidor final">Consumidor final</option>
+                                </select>
+                                </div>
+
+                                <div class="full">
+                                <button type="submit" class="submit">
+                                    Quero ser parceiro Terrana
+                                </button>
+                                </div>
+
+                            </div>
+
+                            <p
+                                id="mensagem"
+                                class="message"
+                                role="status"
+                                aria-live="polite"
+                            ></p>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bloco-02">
+            <div class="wrapper">
+                <div class="columns">
+                    <div class="left">
+                        <div class="imagem">
+                            <img src="imgs/imagem-01.jpg" alt="Imagem Loja Terrana" />
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            <span>Uma estrutura sólida para impulsionar o seu negócio</span>
+                        </div>
+                        <div class="content">
+                            <span>Desde 2020, a Terrana é uma indústria que conecta empresas aos melhores produtos naturais a granel, oferecendo qualidade, logística eficiente e suporte especializado.</span>
+                            <span><b>Hoje, contamos com:</b></span>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="imgs/icon-check.svg" alt="Icon Check" />
+                                <span>Loja física e presença na CEASA Campinas</span>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/icon-check.svg" alt="Icon Check" />
+                                <span>Fábrica própria de temperos com receitas exclusivas</span>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/icon-check.svg" alt="Icon Check" />
+                                <span>Centro de Distribuição com 1.300&nbsp;m² para abastecimento ágil</span>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/icon-check.svg" alt="Icon Check" />
+                                <span>Experiência em soluções B2B para padarias, restaurantes, hotéis, buffets e varejo</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <span><b>Mais do que um fornecedor, somos um parceiro que cresce junto com você.</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bloco-03">
+            <div class="wrapper">
+                <div class="title-wrapper">
+                    <span class="title">Avaliações de quem confia na nossa loja e em nossos produtos</span>
+                </div>
+                <div class="custom-reviews-track">
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>Marcelo Soares</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Comprei os temperos da Terrana sem muita expectativa e me
+                        surpreendi demais. O sabor é muito mais natural e forte
+                        do que os de mercado. Hoje não uso mais outra marca.
+                        </p>
+                    </article>
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>Roger Lopes</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Sou nutricionista e indico para vários pacientes.
+                        A qualidade dos produtos naturais é excelente e confiável.
+                        Dá pra sentir que é um produto de verdade.
+                        </p>
+                    </article>
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>Lucas Rosa</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Entrega rápida e tudo muito bem embalado.
+                        Os temperos chegaram super frescos e perfumados.
+                        Virou minha loja favorita!
+                        </p>
+                    </article>
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>Yago Costa</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Eu tenho restaurante e comecei a testar os produtos
+                        da Terrana. Resultado: padronização no sabor e economia.
+                        Qualidade muito acima da média.
+                        </p>
+                    </article>
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>Alfredo Camargo</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Fiquei impressionada com a variedade de castanhas
+                        da Terrana! desde as mais tradicionais até opções
+                        diferentes e difíceis de encontrar. Além disso,
+                        todas que comprei vieram super frescas e crocantes.
+                        Dá pra perceber o cuidado na seleção.
+                        </p>
+                    </article>
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>Juliano Almeida</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Comprei pela primeira vez por indicação e já virei
+                        cliente fiel. O tempero de alho e ervas é
+                        simplesmente perfeito!
+                        </p>
+                    </article>
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>Maria Albuquerque</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Sou bem exigente com alimentação saudável e posso
+                        dizer: a entrega exatamente o que promete.
+                        Produtos naturais de verdade.
+                        </p>
+                    </article>
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>Fernanda Oliveira</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Preço justo pela qualidade. Já comprei em outros
+                        lugares mais baratos, mas nenhum chega perto
+                        do padrão da Terrana.
+                        </p>
+                    </article>
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>João Carlos Matos</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Gostei muito da variedade. Consegui comprar tudo
+                        que precisava em um só lugar, desde temperos até
+                        produtos naturais para o dia a dia.
+                        </p>
+                    </article>
+                    <article class="custom-review-card">
+                        <div class="custom-review-stars">
+                            <img src="imgs/icon-estrelas.svg" alt="5 estrelas">
+                        </div>
+                        <h3>Felipe Leão</h3>
+                        <span class="custom-review-label">Cliente satisfeito</span>
+                        <p>
+                        Atendimento excelente! Tive uma dúvida e fui super
+                        bem atendida. Dá segurança comprar de uma empresa
+                        séria assim.
+                        </p>
+                    </article>
+                </div>
+                <div class="custom-reviews-pagination"
+                    aria-label="Navegação das avaliações"></div>
+            </div>
+        </section>
+
+        <section id="bloco-04">
+            <div class="logos">
+                <div class="logos-slide">
+                    <img src="imgs/logo-01.svg" alt="Logo Good Bom" />
+                    <img src="imgs/logo-02.svg" alt="Logo Sempre Vale Supermercados" />
+                    <img src="imgs/logo-03.svg" alt="Logo Vitória Max" />
+                    <img src="imgs/logo-04.svg" alt="Logo Santa Carolina Supermercados" />
+                    <img src="imgs/logo-05.svg" alt="Logo Vizinho Supermercados" />
+                    <img src="imgs/logo-06.svg" alt="Logo Ponto Novo" />
+                    <img src="imgs/logo-07.svg" alt="Logo Bom Mix Supermercado" />
+                    <img src="imgs/logo-08.svg" alt="Logo Crema Supermercados" />
+                    <img src="imgs/logo-09.svg" alt="Logo Bragion Supermercados" />
+                    <img src="imgs/logo-10.svg" alt="Logo Coopbom Supermercados" />
+                    <img src="imgs/logo-11.svg" alt="Logo Supermercado Generoso" />
+                    <img src="imgs/logo-12.svg" alt="Logo Taquaral Supermercado" />
+                    <img src="imgs/logo-13.svg" alt="Logo Sumerbol Supermercados" />
+                    <img src="imgs/logo-14.svg" alt="Logo Delta Supermercados" />
+                    <img src="imgs/logo-15.svg" alt="Logo Liderança Max Supermercados" />
+                    <img src="imgs/logo-16.svg" alt="Logo Aurok" />
+                </div>
+            </div>
+        </section>
+
+        <section id="bloco-05">
+            <div class="wrapper">
+                <div class="title-wrapper">
+                    <div class="title">
+                        <span>Embalagem fracionada</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <span>Na Terrana, você compra de acordo com a necessidade do seu negócio.</span>
+                    <span>Oferecemos diferentes formatos de embalagens para que você possa testar novos produtos, realizar pequenas reposições e abastecer itens de alto giro sem imobilizar capital.</span>
+                    <span>Mais flexibilidade, menos desperdício e um estoque alinhado às suas vendas.</span>
+                </div>
+                <div class="imagens">
+                    <img src="imgs/imagem-02.jpg" alt="Embalagem Aveia Grossa" />
+                    <img src="imgs/imagem-03.jpg" alt="Embalagens Nozes" />
+                    <img src="imgs/imagem-04.jpg" alt="Embalagem" />
+                </div>
+            </div>
+        </section>
+
+        <section id="bloco-06">
+            <div class="wrapper">
+                <div class="columns">
+                    <div class="left">
+                        <div class="title">
+                            <span>Pronto para levar mais variedade e rentabilidade para o seu negócio?</span>
+                        </div>
+                        <div class="content">
+                            <span>Nossa equipe está pronta para ajudar você a encontrar as melhores soluções em produtos naturais para o seu estabelecimento.</span>
+                        </div>
+                        <button class="button">
+                            <a href="#bloco-01">Fale com nossos especialistas</a>
+                        </button>
+                    </div>
+                    <div class="right">
+                        <div class="imagem">
+                            <img src="imgs/imagem-05.jpg" alt="Imagem Loja Terrana" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="wrapper">
+                <div class="footer-wrapper">
+                    <div class="top">
+                        <a href="https://atacadoterrana.com.br/" target="_blank">
+                            <img src="imgs/logo-terrana-02.png" alt="Logo Terrana" />
+                        </a>
+                        <div class="redes-sociais">
+                            <a href="https://www.instagram.com/terranaatacadonaturais/" target="_blank">
+                                <img src="imgs/logo-instagram.svg" alt="Logo Instagram" />
+                            </a>
+                            <a href="https://www.facebook.com/p/Terrana-Naturais-61567530334881/" target="_blank">
+                                <img src="imgs/logo-facebook.svg" alt="Logo Facebook" />
+                            </a>
+                            <a href="https://www.youtube.com/@AtacadoTerrana" target="_blank">
+                                <img src="imgs/logo-youtube.svg" alt="Logo Youtube" />
+                            </a>
+                            <a href="https://www.tiktok.com/@terrananaturais" target="_blank">
+                                <img src="imgs/logo-tiktok.svg" alt="Logo Tiktok" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <span>&copy; 2026 Terrana. Todos os direitos reservados.</span>
+                        <a href="https://agenciadelucca.com.br" target="_blank">
+                            <img src="imgs/logo-delucca.png" alt="Logo Agência Delucca" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
