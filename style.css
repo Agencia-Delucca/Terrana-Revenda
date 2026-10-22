@@ -101,7 +101,7 @@ body {
     flex-direction: column;
 }
 
-#bloco-01 iframe {
+#bloco-01 .columns .right iframe {
     max-width: 100% !important;
 }
 
